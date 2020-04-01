@@ -1,7 +1,6 @@
 
 .editor {
   display: flex;
-  color: #D7BDE2;
   flex-direction: column;
 }
 
@@ -13,13 +12,13 @@
   flex-direction: row;
   justify-content: space-around;
   .button-bar {
-    background-color: #D6DBDF;
+    background-color: #E2E8F1;
     border: none;
     padding: 10px;
     font-size: 14px;
-    color: #2E4053;
+    color: #08142a;
     &.is-active {
-      background-color: #2E4053;
+      background-color: #08142a;
       color: #D6DBDF;
     }
   }
@@ -42,7 +41,8 @@
 }
 
 .editor-content {
-  border: solid #EBF5FB 2px;
+  border: solid #F4D03F 5px;
+  color: #FFFAFA;
   margin: 30px 10px 0px 10px;
   padding: 10px;
 }
@@ -57,6 +57,29 @@ button:focus {
 }
 
 .modal-window {
+  .modal {
+    background-color: #08142A;
+    display: flex;
+    flex-direction: column;
+    .radio-group {
+      flex-direction: row;
+      input {
+        width: 20px;
+        position: relative;
+        left: 10px;
+        vertical-align: middle;
+      }
+      label {
+        width: 200px;
+        position: relative;
+        left: 20px;
+        top: 1px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+  color: #F4D03F;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);
   top: 0;
@@ -111,7 +134,8 @@ body {
 
 body {
   font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  background-image: linear-gradient(to right,#7f53ac 0,#657ced 100%);
+  background: rgb(8,20,42);
+  background: linear-gradient(297deg, rgba(8,20,42,1) 0%, rgba(28,71,124,1) 100%, rgba(195,203,208,1) 100%);
   color: black
 }
 

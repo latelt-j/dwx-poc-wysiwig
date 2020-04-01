@@ -19,12 +19,16 @@
     </editor-menu-bar>
     <editor-content class="editor-content" :editor="editor" />
     <div v-if="modalState" id="open-modal" class="modal-window">
-      <div>
+      <div class="modal">
         <a @click="closeVariablesModal()" title="Close" class="modal-close">Close</a>
-        <input type="radio" id="variablea" v-model="variable" value="okay">
-        <label for="variablea">Variable A</label>
-        <input type="radio" id="variableb" v-model="variable" value="google">
-        <label for="variableb">Variable B</label>
+        <div class="radio-group">
+          <input type="radio" id="variablea" v-model="variable" value="okay">
+          <label for="variablea">Okay</label>
+        </div>
+        <div class="radio-group">
+          <input type="radio" id="variableb" v-model="variable" value="google">
+          <label for="variableb">Google</label>
+        </div>
       </div>
     </div>
     <div class="footer">
