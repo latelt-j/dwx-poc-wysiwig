@@ -1,5 +1,7 @@
 # wysiwyg-template-mail
 
+Little POC to see if we can develop a WYSIWIG template mail and adding some customisation by adding modal selection's variables.
+
 ## Project setup
 ```
 yarn install
