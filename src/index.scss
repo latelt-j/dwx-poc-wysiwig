@@ -1,6 +1,7 @@
 
 .editor {
   display: flex;
+  color: #D7BDE2;
   flex-direction: column;
 }
 
@@ -25,11 +26,12 @@
 }
 
 .title {
-  color: #1C2833;
+  color: #F4D03F;
   margin-left: 10px;
 }
 
 .footer {
+  color: #F0F3F4;
   margin-top: 60px;
   margin-left: 10px;
   text-align: center;
@@ -38,11 +40,11 @@
 .editor-content {
   border: solid #EBF5FB 2px;
   margin: 30px 10px 0px 10px;
+  padding: 10px;
 }
 
 .ProseMirror:focus {
   outline: none;
-  border: solid #EBF5FB 1px;
 }
 
 button:focus {
