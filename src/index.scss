@@ -1,4 +1,35 @@
 
+.menubar {
+  width: 200px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .button-bar {
+    background-color: #D6DBDF;
+    border: none;
+
+    &.is-active {
+      background-color: #2E4053;
+    }
+  }
+}
+
+.editor-content {
+  border: solid #EBF5FB 2px;
+  margin-top: 30px;
+}
+
+.ProseMirror:focus {
+  outline: none;
+  border: solid #EBF5FB 1px;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
 .modal-window {
   position: fixed;
   background-color: rgba(255, 255, 255, 0.25);

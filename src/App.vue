@@ -1,16 +1,22 @@
 <template>
   <div class="editor">
-    <editor-menu-bar :editor="editor">
+    <editor-menu-bar :editor="editor" v-slot="{ commands, isActive }">
       <div class="menubar">
         <button
-          class="menubar__button"
+          class="button-bar"
           @click="showVariablesModal()"
         >
           Add Variables
         </button>
+        <button class="button-bar" :class="{ 'is-active': isActive.bold() }" @click="commands.bold">
+          Bold
+        </button>
+        <button class="button-bar" :class="{ 'is-active': isActive.heading({ level: 2 }) }" @click="commands.heading({ level: 2 })">
+          H2
+        </button>
       </div>
     </editor-menu-bar>
-    <editor-content class="editor__content" :editor="editor" />
+    <editor-content class="editor-content" :editor="editor" />
     <div v-if="modalState" id="open-modal" class="modal-window">
       <div>
         <a @click="closeVariablesModal()" title="Close" class="modal-close">Close</a>
@@ -25,6 +31,10 @@
 
 <script>
   import { Editor, EditorContent, EditorMenuBar } from 'tiptap'
+  import {
+    Heading,
+    Bold
+  } from 'tiptap-extensions'
   import './index.scss';
   export default {
     components: {
@@ -36,6 +46,10 @@
         modalState: false,
         variable: '',
         editor: new Editor({
+          extensions: [
+            new Heading(),
+            new Bold(),
+          ],
           content: `
           <h2>
             Embeds
