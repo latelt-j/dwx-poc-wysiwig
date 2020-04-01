@@ -1,4 +1,9 @@
 
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+
 .menubar {
   width: 200px;
   margin-top: 30px;
@@ -15,9 +20,24 @@
   }
 }
 
+.picto-vuejs {
+  width: 20px;
+}
+
+.title {
+  color: #1C2833;
+  margin-left: 10px;
+}
+
+.footer {
+  margin-top: 60px;
+  margin-left: 10px;
+  text-align: center;
+}
+
 .editor-content {
   border: solid #EBF5FB 2px;
-  margin-top: 30px;
+  margin: 30px 10px 0px 10px;
 }
 
 .ProseMirror:focus {
@@ -80,6 +100,7 @@ button:focus {
 html,
 body {
   height: 100%;
+  margin: 0;
 }
 
 body {

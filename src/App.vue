@@ -1,5 +1,6 @@
 <template>
   <div class="editor">
+    <h1 class="title">POC WYSIWIG TEMPLATE MAIL</h1>
     <editor-menu-bar :editor="editor" v-slot="{ commands, isActive }">
       <div class="menubar">
         <button
@@ -25,6 +26,9 @@
         <input type="radio" id="variableb" v-model="variable" value="google">
         <label for="variableb">Variable B</label>
       </div>
+    </div>
+    <div class="footer">
+      Made with <img class="picto-vuejs" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1200px-Vue.js_Logo_2.svg.png">
     </div>
   </div>
 </template>
