@@ -8,15 +8,19 @@
 .menubar {
   width: 200px;
   margin-top: 30px;
+  margin-left: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   .button-bar {
     background-color: #D6DBDF;
     border: none;
-
+    padding: 10px;
+    font-size: 14px;
+    color: #2E4053;
     &.is-active {
       background-color: #2E4053;
+      color: #D6DBDF;
     }
   }
 }
