@@ -60,10 +60,10 @@
           ],
           content: `
           <h2>
-            Embeds
+            Hello World
           </h2>
           <p>
-            This is an example of a custom iframe node. This iframe is rendered as a <strong>vue component</strong>. This makes it possible to render the input below to change its source.
+            This is in example, here you can write all ever you want...
           </p>
         `,
         }),
